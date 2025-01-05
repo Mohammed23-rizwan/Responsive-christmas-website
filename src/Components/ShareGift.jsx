@@ -14,15 +14,15 @@ const ShareGift = () => {
     { rate: 35, name: "Snowman", img: img5 },
   ];
   return (
-    <div className="w-full h-[738px] flex flex-col items-center">
+    <div className="w-full sm:h-[738px] flex flex-col items-center">
       <h2 className="capitalize text-D-h2-font-size font-semibold mb-[64px]">
         share a gift
       </h2>
-      <div className="grid grid-cols-3 gap-10 place-items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-10 place-items-center">
         {details.map((detail, index) => {
           return (
             <div
-              className="p-5 flex justify-center w-[200px] h-[247px] bg-container-color-dark flex-col relative rounded-lg"
+              className="p-5 flex justify-center sm:w-[200px] w-[144px] h-[192px] sm:h-[247px] bg-container-color-dark flex-col relative rounded-lg"
               key={index}
             >
               <div className="absolute right-[20px] top-[20px] text-first-color">
@@ -35,10 +35,10 @@ const ShareGift = () => {
                   alt=""
                 />
               </div>
-              <h2 className=" text-D-h3-font-size font-semibold">
+              <h2 className="sm:text-D-h3-font-size font-semibold text-M-h3-font-size">
                 ${detail.rate}
               </h2>
-              <p className="text-[14px] text-text-color-dark capitalize">
+              <p className=" text-[13px] sm:text-[14px] text-text-color-dark capitalize">
                 {detail.name}
               </p>
             </div>

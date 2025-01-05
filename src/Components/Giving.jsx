@@ -17,14 +17,14 @@ const Giving = () => {
     },
   ];
   return (
-    <div className="w-full h-[440px] flex flex-col justify-center items-center">
+    <div className="w-full h-full sm:h-[440px] flex flex-col justify-center items-center">
       <div>
-        <h2 className=" text-D-h2-font-size text-center font-semibold">
+        <h2 className=" text-M-h2-font-size sm:text-D-h2-font-size text-center font-semibold">
           Start Giving This <br />
           Christmas
         </h2>
       </div>
-      <div className="pt-[56px] flex gap-[128px]">
+      <div className="pt-[56px] grid grid-cols-2 sm:grid-cols-3 gap-7 sm:gap-[128px]">
         {detail.map((item, index) => {
           return (
             <div

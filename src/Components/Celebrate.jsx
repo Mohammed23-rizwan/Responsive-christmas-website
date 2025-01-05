@@ -2,8 +2,8 @@ import img1 from "../assets/images/celebrate 1.png";
 
 const Celebrate = () => {
   return (
-    <div className="w-full h-[554px] flex justify-center items-center px-[180px] gap-20">
-      <div className="w-1/2">
+    <div className="w-full sm:h-[554px] flex-col sm:flex-row flex justify-center items-center mt-12 sm:m-0 sm:px-[180px] sm:gap-20">
+      <div className="sm:w-1/2 px-6 sm:p-0 flex sm:block flex-col items-center">
         <h2 className="text-D-h2-font-size font-semibold">
           Celebrate With A Lot Of Love
         </h2>
@@ -16,7 +16,7 @@ const Celebrate = () => {
           send good wishes
         </button>
       </div>
-      <div className="w-1/2">
+      <div className="px-5 sm:p-0  sm:w-1/2">
         <img src={img1} className="w-[450px] h-[450px]" alt="" />
       </div>
     </div>

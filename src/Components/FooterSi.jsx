@@ -3,7 +3,7 @@ import img1 from "../assets/images/aviable1.png";
 import img2 from "../assets/images/aviable2.png";
 const Footer = () => {
   return (
-    <div className="w-full h-[400px] py-[72px] flex justify-around relative">
+    <div className="w-full sm:h-[400px] py-[72px] flex sm:flex-row p-4 flex-col justify-around relative gap-10 sm:gap-0">
       <div>
         <ul>
           <li className="flex gap-2 items-center mb-6">
@@ -48,7 +48,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p className="absolute bottom-[36px] flex justify-center">
+      <p className="absolute bottom-[36px] w-full flex justify-center sm:text-M-small-font-size text-D-small-font-size text-text-color-light">
         Bedimcode. All rigths reserved
       </p>
     </div>

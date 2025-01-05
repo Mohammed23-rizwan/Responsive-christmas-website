@@ -13,11 +13,11 @@ const NewArraival = () => {
   ];
 
   return (
-    <div className="w-full h-[537px]">
+    <div className="w-full sm:h-[537px] mt-4 sm:mt-0 h-full">
       <h2 className="capitalize text-D-h2-font-size flex justify-center pb-16">
         new gifts
       </h2>
-      <div className="flex justify-center gap-16">
+      <div className="sm:flex justify-center gap-16 grid grid-cols-1 place-items-center">
         {GiftDetails.map((detail, index) => {
           return (
             <div
